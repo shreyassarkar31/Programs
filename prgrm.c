@@ -1,25 +1,16 @@
-// fibanocci
-#include <stdio.h>
-#include <stdlib.h>
-int main()
+#include<stdio.h>
+void main()
 {
-	int a[100],i,n,s;
-	printf("enter the size");
-	scanf("%d",&n);
-	a[0]=0;
-	a[1]=1;
-		s=0;
-	for(i=2; i<n; i++)
+	int a;
+	printf("Type the digit \n");
+	scanf("%d",&a);
+	if(a%2==0)
 	{
-		a[i]=a[i-1]+a[i-2];
-		
-		}
-		for(i=0; i<n; i++){
-		
-		printf(" %d ",a[i]);
-		
+	printf("%d is Even  \n",a);
+}
+	else{
+		printf("%d is Odd \n",a);
 	}
-	system("pause");
-	return 0;
-	
-	}
+
+}
+
